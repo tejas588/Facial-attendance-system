@@ -1,0 +1,181 @@
+/* StudentDirectory.css */
+.directory-container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.directory-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .directory-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.directory-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.directory-subtitle {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.directory-stats {
+  background-color: white;
+  padding: 0.625rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.directory-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .directory-filter-bar {
+    flex-direction: row;
+  }
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.625rem 0.875rem 0.625rem 2.5rem;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.filter-select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filter-select-wrapper svg {
+  position: absolute;
+  left: 0.875rem;
+  pointer-events: none;
+}
+
+.filter-select {
+  padding: 0.625rem 2rem 0.625rem 2.5rem;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.directory-table-card {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.directory-table {
+  width: 100%;
+  text-align: left;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.directory-table-header-row {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 500;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.directory-th {
+  padding: 1rem 1.5rem;
+}
+
+.directory-row-hover {
+  transition: background-color 0.2s;
+}
+
+.directory-row-hover:hover {
+  background-color: #f8fafc;
+}
+
+.directory-td {
+  padding: 1rem 1.5rem;
+}
+
+.section-pill {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.bio-status-registered {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #059669;
+  font-weight: 500;
+}
+
+.bio-status-pending {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #d97706;
+  font-weight: 500;
+}
+
+.delete-btn {
+  padding: 0.5rem;
+  color: #94a3b8;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
